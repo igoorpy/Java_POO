@@ -1,12 +1,12 @@
 public class Caneta {
-    // ATRIBUTOS (Características da caneta)
+    // ATRIBUTOS
     public String modelo;
     public String cor;
     public float ponta;
     public int carga;
     public boolean tampada;
 
-    // MÉTODOS (Ações que a caneta pode fazer)
+    // MÉTODOS
     public void status() {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Cor: " + this.cor);
@@ -16,10 +16,10 @@ public class Caneta {
     }
 
     public void rabiscar() {
-        if (this.tampada == true) {
+        if (this.tampada) {
             System.out.println("ERRO! Não posso rabiscar, a caneta está tampada.");
         } else {
-            System.out.println("Rabiscando");
+            System.out.println("Rabiscando... ✏️");
         }
     }
 
